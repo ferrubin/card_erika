@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-size: 16px;
+}
+/* ESTE ES EL ALERT QUE TE AVISO CUANDO EL MAIL FUE COPIADO, 
+RECOMIENDO DEJARLO COMO ESTA */
+#alert {
+  z-index: 2;
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: rgb(55, 204, 179);
+  border-radius: 20px;
+  padding: 12px 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 68px;
+}
+#card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: fit-content;
+  margin: 12px auto;
+  /* COLOR DE LA CARD */
+  background-color: #bc8275;
+  /*  */
+  border-radius: 20px;
+  padding: 32px 12px;
+}
+#img__profile {
+  width: 220px;
+  border-radius: 50%;
+}
+#profile__info {
+  margin-top: 4%;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  /* COLOR DE TU NOMBRE Y APELLIDO */
+  color: #fff;
+  /*  */
+  font-weight: 600;
+  font-size: 1.6rem;
+  text-align: center;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+/* COLOR DEL PUESTO/PROFESION Y EL USER NAME */
+h2,
+h3 {
+  color: #c6c3ca;
+}
+/*  */
+#social__icons {
+  width: 200px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.social__icons {
+  height: 40px;
+  width: 40px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+#button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 28px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background: #3d4340;
+  height: 60px;
+  border: 2px solid #fff;
+  width: 260px;
+  border-radius: 32px;
+  font-weight: 600;
+  /* COLOR DEL TEXTO DEL BOTON */
+  color: #fff;
+  /*  */
+  text-align: left;
+}
+a {
+  transition: 0.2s ease-in-out;
+}
+a:hover {
+  margin-top: -2px;
+  transition: 0.2s ease-in-out;
+  /* ESTA ES LA SOMBRE QUE SE HACE AL HACER HOVER A LAS REDES SOCIALES */
+  filter: drop-shadow(4px 4px 12px rgba(130, 172, 161, 0.6));
+  /*  */
+}
+#copy {
+  height: 36px;
+  width: 36px;
+}
+
+/* ACA EMPIEZA EL RESPONSIVE, RECOMIENDO NO TOCARLO A MENOS QUE SEPAS DE FRONT END */
+@media screen and (min-width: 620px) {
+  #card {
+    width: 460px;
+    height: 500px;
+    margin: 40px auto;
+  }
+  #img__profile {
+    width: 160px;
+    border-radius: 50%;
+  }
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #social__icons {
+    width: 200px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .social__icons {
+    height: 40px;
+    width: 40px;
+  }
+
+  button {
+    margin-top: 28px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    background: #353535;
+    padding: 10px 12px;
+    border: 2px solid #53d6b4;
+    width: 280px;
+    border-radius: 32px;
+    font-weight: 600;
+    color: #53d6b4;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 800px) {
+  #card {
+    width: 700px;
+    height: 900px;
+    margin: 120px auto;
+  }
+  #img__profile {
+    width: 320px;
+    border-radius: 50%;
+  }
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+  }
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  #social__icons {
+    width: 320px;
+    display: flex;
+    flex-flow: row nowrap;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .social__icons {
+    height: 60px;
+    width: 60px;
+  }
+  button {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 42px;
+    min-width: 420px;
+    min-height: 80px;
+    border-radius: 32px;
+    font-weight: 600;
+    text-align: left;
+  }
+  #text__button {
+    font-size: 1.7rem;
+  }
+  #copy {
+    height: 54px;
+    width: 54px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #card {
+    width: 560px;
+    height: 720px;
+    margin: 60px auto;
+  }
+  #img__profile {
+    width: 220px;
+    border-radius: 50%;
+  }
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+  }
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  #social__icons {
+    width: 320px;
+    display: flex;
+    flex-flow: row nowrap;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .social__icons {
+    height: 60px;
+    width: 60px;
+  }
+  button {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 42px;
+    min-width: 420px;
+    min-height: 80px;
+    border-radius: 32px;
+    font-weight: 600;
+    text-align: left;
+  }
+  #text__button {
+    font-size: 1.7rem;
+  }
+  #copy {
+    height: 54px;
+    width: 54px;
+  }
+}
+
+#inputmail {
+  opacity: 0;
+  height: 1px;
+}
